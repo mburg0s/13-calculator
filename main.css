@@ -1,0 +1,20 @@
+#first-no, #second-no, #answer {
+    height: 20px;
+    width: 60px;
+    border: 2px solid #a09c9c;
+}
+
+#subtract, #add, #divide, #times ,#reset{
+    height: 30px;
+    width: 50px;
+
+
+}
+#form {
+
+    display: flex;
+    flex-direction: column;
+}
+#button1 {
+    align-items: row;
+}
