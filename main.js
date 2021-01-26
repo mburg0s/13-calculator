@@ -9,8 +9,7 @@ document.querySelector('#form').addEventListener('submit', function (e) {
     if (e.submitter.id == "times") {
        ans = (Number(first.value) * Number(second.value))
     } else if (e.submitter.id == "add") {
-        ans = (Number(first.value) + Number(first.value))
-        console.log(Number(first.value),Number(first.value))
+        ans = (Number(first.value) + Number(second.value))
 
     } else if ( e.submitter.id == "subtract") {
         ans = (Number(first.value) - Number(second.value))
@@ -50,8 +49,17 @@ document.querySelector('#form').addEventListener('submit', function (e) {
 
 //   document.querySelector('#calculator').addEventListener('submit', function (e) {
 //     e.preventDefault()
+//     let fVal = e.submitter.value
+//     let sVal = e.submitter.value
 
-//     console.log(e.submitter.value)
+//     console.log(fval, sVal)
+
+    // if (e.submitter.value == '=') {
+    
+
+
+
+    // }
 
     
     
