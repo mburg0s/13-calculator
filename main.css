@@ -1,12 +1,36 @@
-#first-no, #second-no, #answer {
-    height: 20px;
-    width: 60px;
-    border: 2px solid #a09c9c;
+body {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+
+
 }
 
-#subtract, #add, #divide, #times ,#reset{
+label {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+#first-no, #second-no, #answer {
     height: 30px;
-    width: 50px;
+    width: 70px;
+    border: 2px solid #a09c9c;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+
+    
+}
+
+#subtract, #add, #divide, #times ,#clear
+{
+    height: 30px;
+    width: 70px;
+    font-size: 25px;
+    margin: 5px;
+    text-align: center;
 
 
 }
