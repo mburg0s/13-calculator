@@ -42,3 +42,19 @@ label {
 #button1 {
     align-items: row;
 }
+#calculator{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: */    border: 2px solid #000000;
+
+}
+
+#total {
+    grid-column-start: 2;
+    grid-column-end:5;
+}
+
+#calculator button{
+    height: 40px;
+
+}
