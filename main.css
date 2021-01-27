@@ -1,4 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 body {
+    padding :20px;
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -7,30 +20,46 @@ body {
 }
 
 label {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
-
-}
-
-#first-no, #second-no, #answer {
-    height: 30px;
-    width: 70px;
-    border: 2px solid #a09c9c;
-    margin: 10px;
-    padding: 10px;
-    font-size: 20px;
-
+    text-align: center;
     
+
 }
 
-#subtract, #add, #divide, #times ,#clear
+#first-no, #second-no, #answer,#clear {
+    height: 30px;
+    width: 200px;
+    border: 2px solid #a09c9c;
+    margin-top:10px;
+    margin-left: 10px;
+    /* padding: 5px; */
+    font-size: 20px;
+    margin-left: 70px;
+    /* padding:5px; */
+} 
+
+h3 {
+    text-align: center;
+    padding: 5px;
+
+} 
+    
+
+#button1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;;
+
+}
+#subtract, #add, #divide, #times 
 {
     height: 30px;
-    width: 70px;
-    font-size: 25px;
-    margin: 5px;
-    text-align: center;
+    width: 50px;
+    font-size: 20px;
+    margin: 3px;
+    /* padding-left: 20px; */
 
 
 }
@@ -38,6 +67,11 @@ label {
 
     display: flex;
     flex-direction: column;
+    height: 350px;
+    width: 350px;
+    border: 2px solid #a09c9c;
+    background-color:antiquewhite
+
 }
 #button1 {
     align-items: row;

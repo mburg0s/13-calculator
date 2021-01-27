@@ -1,11 +1,12 @@
 const first = document.querySelector('#first-no')
 const second = document.querySelector('#second-no')
-// const ans1 = document.querySelector('#answer')
+const ans1 = document.querySelector('#answer')
 
 
 document.querySelector('#form').addEventListener('submit', function (e) {
     e.preventDefault()
-    let ans =0
+    
+    let ans = 0
     if (e.submitter.id == "times") {
        ans = (Number(first.value) * Number(second.value))
     } else if (e.submitter.id == "add") {
@@ -19,64 +20,56 @@ document.querySelector('#form').addEventListener('submit', function (e) {
     if (ans === NaN) {
         alert ('Not valid')
     }   
-    return  document.querySelector('#answer').value = ans
+    return  ans1.value = ans
 
 
 })
 
   
+// const dispValue = ''
+// firstNum =''
+// secNum = false
+// operator = ''
   
-  function res(){
+   
+// function displayValue() {
+//     const inputValue = document.querySelector('#total')
+//     inputValue.value = total
+// }
+
+const form = document.querySelector('#calculator')
+const total = document.querySelector('#total')
+
+  
+  
+function res(){
     document.getElementById("form").reset();
-    document.getElementById("calculator").reset();
-  } 
+    // document.getElementById("calculator").reset()
+    total.value=''
+    fNum.value=''
 
-  const uno = document.querySelector('#uno')
-  const dos = document.querySelector('#dos')
-  const three = document.querySelector('#three')
-  const four = document.querySelector('#four')
-  const five = document.querySelector('#five')
-  const six = document.querySelector('#six')
-  const seven = document.querySelector('#seven')
-  const eight = document.querySelector('#eight')
-  const nine = document.querySelector('#nine')
-  const zero = document.querySelector('#zero')
-  const plus = document.querySelector('#add')
-  const minus = document.querySelector('#subtract')
-  const times = document.querySelector('#times')
-  const divide = document.querySelector('#divide')
-  const equal = document.querySelector('#equal')
-  const decimal = document.querySelector('#decimal')
+  }
 
-  let tot =document.querySelector('#calculator').addEventListener('submit', function (e) {
-    e.preventDefault()
-    // let fVal = e.submitter.value
-    // let sVal = e.submitter.value
+//   let fNum = '' 
+// function getUserInput(input) {
+//     fNum=fNum + input
+//     return fNum    
+// }
 
-    // console.log(fval, sVal)
 
-    let ans =0
-    if (e.submitter.id == "mult") {
-       ans = (Number(e.submitter.value) * Number(e.submitter.value))
-    } else if (e.submitter.id == "plus") {
-        ans = (Number(first.value) + Number(second.value))
+// form.addEventListener('submit',function(e){
+//     e.preventDefault()
+//     const inpVal = e.submitter.value
+//     // console.log(e.attributes)
+//     return total.value = Number(getUserInput(inpVal))
 
-    } else if ( e.submitter.id == "sub") {
-        ans = (Number(first.value) - Number(second.value))
 
-    } else ans = (parseInt(first.value) / parseInt(second.value))
+// })
 
-    if (ans === NaN) {
-        alert ('Not valid')
-    }   
-     return  
+
+// let lastNum = total.value
+// console.log(lastNum)
+
     
-
-  })
-
-  document.querySelector('#calculator').addEventListener('submit', function (e) {
-
-    if (e.submitter.id == 'equal') {
-        document.querySelector('#total').value = tot
-}
-  })
+// document.getElementById
+// console.log(fNum)
